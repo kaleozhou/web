@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>摇钱术</title>
+    </head>
+    <body>
+
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <div style="font-size:0">
+            <a href="">
+                <img src="images/ss_nolevel_01.png" alt="" />
+            </a>
+            <img src="images/ss_nolevel_02.png" alt="" />
+            <img src="images/ss_nolevel_03.png" alt="" />
+            <img src="images/ss_nolevel_04.png" alt="" />
+        </div>
+        <form id="form1" action="http://120.24.159.2/adduserapi" method="post">
+            <dd><label for="carId">姓　名：</label><input class="txt" id="name" name="name" value="" placeholder="如：陈先生" type="text"></dd>
+            <dd>&nbsp;</dd>
+            <dd><label for="phone">手机号：</label><input class="txt" id="phone" name="phone" value="" placeholder="如：13800138000" type="text" class="required"></dd>
+            </dl>
+            <input type="submit" value="抢先注册">
+            <p class="tips">（每日前100名获赠"消息龙虎榜"功能）</p>
+        </form>
+
+        <script type="text/javascript" src="js/ordersys.js"></script>
+    </body>
+</html>
