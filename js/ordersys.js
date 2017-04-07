@@ -48,7 +48,7 @@ function adduser(){
 }
 $(document).ready(function() {
     var options = {
-        target: '#output1',
+       //target: '#output1',
         // 从服务传过来的数据显示在这个div内部
         beforeSubmit: showRequest,
         // ajax提交之前的处理
@@ -82,7 +82,7 @@ function showRequest(formData, jqForm, options) {
 
             if (formData[i].name=='phone') {
                 var mobile=formData[i].value;
-                if(mobile.length==11&&(/^1[3|4|5|8][0-9]\d{4,8}$/.test(sMobile)))
+                if(mobile.length==11&&(/^1[3|4|5|8][0-9]\d{4,8}$/.test(mobile)))
                 {
                     var res=true;
                 }else
@@ -105,7 +105,7 @@ function showRequest(formData, jqForm, options) {
         //成功，则提交ajax form
         //如果验证不成功，则返回非true，不提交
     }catch(e){
-        alert("您的输入有误！");
+        alert("您的输入有误！"+e.message);
         var res=false; 
     }
     return res;
